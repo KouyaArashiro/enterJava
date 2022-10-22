@@ -4,8 +4,17 @@ public class Hero {
 	String name;
 	int hp;
 	
+	public Hero() {
+		this.name = "Kouya";
+		this.hp = 100;
+	}
+	public Hero(String name, int hp) {
+		this.name = name;
+		this.hp = hp;
+	}
+	
 	public void sleep() {
-		this.hp = 	100;
+		this.hp += 100;
 		System.out.println(this.name + "は、眠って回復した");
 	}
 	

@@ -1,6 +1,20 @@
 package chap08;
 
 public class Matango {
+	char suffix;
 	int hp;
-	final int LEVEL = 10;
+	int level;
+	
+	public Matango(char suffix, int hp, int level) {
+		this.suffix = suffix;
+		this.hp = hp;
+		this.level = level;
+	}
+	
+	public void run() {
+		System.out.println(this.suffix + "は、逃げ出した");
+	}
+	
+	
+	
 }
