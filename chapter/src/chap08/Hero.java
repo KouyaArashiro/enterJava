@@ -5,9 +5,13 @@ public class Hero {
 	int hp;
 	
 	public Hero() {
-		this.name = "Kouya";
-		this.hp = 100;
+		this("construnctor2");
 	}
+	public Hero(String name) {
+		this.name = name;
+		this.hp = 300;
+	}
+	
 	public Hero(String name, int hp) {
 		this.name = name;
 		this.hp = hp;
