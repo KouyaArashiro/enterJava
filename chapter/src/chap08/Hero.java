@@ -5,7 +5,7 @@ public class Hero {
 	int hp;
 	
 	public Hero() {
-		this("construnctor2");
+		this("Hero");
 	}
 	public Hero(String name) {
 		this.name = name;
