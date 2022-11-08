@@ -42,7 +42,7 @@ public class Player {
 	//手札を見せる
 	public Hand showHand() {
 		if (myHand_.getNumberOfCards() == 1) {
-			master_.decleareWin(this)
+			master_.decleareWin(this);
 		}
 		
 		//見せる前にシャッフルする
