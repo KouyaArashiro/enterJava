@@ -1,8 +1,8 @@
 package chap08;
 
 public class Hero {
-	String name;
-	int hp;
+	private String name;
+	private int hp;
 	
 	public Hero() {
 		this("Hero");
@@ -15,6 +15,27 @@ public class Hero {
 	public Hero(String name, int hp) {
 		this.name = name;
 		this.hp = hp;
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		if (name == null) {
+			throw new IllegalArgumentException("名前がnullです。処理を中断します。");
+		}
+		
+		if(name.length() <= 1) {
+			throw new IllegalArgumentException("名前が短すぎます。処理を中断します。");
+		}
+		if(name.length() >= 8) {
+			throw new IllegalArgumentException("名前が長すぎます。処理を中断します。");
+		}
+		
+		this.name = name;
+		
+		
 	}
 	
 	public void sleep() {

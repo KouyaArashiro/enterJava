@@ -1,10 +1,11 @@
 package chap11;
 
-public abstract class TangibleAsset {
+public abstract class TangibleAsset implements Asset {
 	
 	String name;
 	int price;
 	String color;
+	double weight;
 	
 	public TangibleAsset(String name, int price, String color) {
 		this.name = name;

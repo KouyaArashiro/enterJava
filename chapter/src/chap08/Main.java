@@ -3,13 +3,15 @@ package chap08;
 public class Main {
 
 	public static void main(String[] args) {
-		SuperHero h1 = new SuperHero();
+		SuperHero h1 = new SuperHero("K");
 //		SuperHero h2 = new SuperHero("Koo");
 //		SuperHero h3 = new SuperHero("superKouya", 150);
 		
 		PoisonMatango pm = new PoisonMatango('A');
+		King k = new King();
 		
-		pm.attack(h1);
+		k.talk(h1);
+//		pm.attack(h1);
 //		
 //		Thief t1 = new Thief("t1", 100, 100);
 //		Thief t2 = new Thief("t2", 100);
