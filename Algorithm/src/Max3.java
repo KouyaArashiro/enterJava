@@ -17,7 +17,8 @@ public class Max3 {
 		
 		if(b > max) {
 			max = b;
-		} else if(c > max) {
+		}
+		if(c > max) {
 			max = c;
 		}
 		
